@@ -1,0 +1,38 @@
+
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+
+}
+
+.left-side {
+    height: 100vh;
+    width: 55vw;
+    background-size: cover;
+    background-position: right;
+    background-image: url(logan-weaver-lgnwvr-5KK5h4WvkXQ-unsplash.jpg);
+}
+
+.div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.39);
+    position: relative;
+    top: 40%;
+    height: 10%;
+}
+
+div[class*="credit"] {
+    background-color: red;
+}

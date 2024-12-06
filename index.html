@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr-CI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="left-side">
+
+            <div class="div-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+                </svg>
+                GIRL
+            </div>
+            <div class="div-credit">
+                <p>Photo by <a href="https://unsplash.com/fr/photos/une-femme-debout-dans-une-cuisine-preparant-de-la-nourriture-5KK5h4WvkXQ" target="_blank" rel="noopener noreferrer">LOGAN WEAVER</a>on <a href="http://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="right-side" style="border-left: 10px red solid;">
+            <div class="right-side-up">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+                You know you want to.
+            </div>
+            <div class="div-form">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>test</legend>
+                        <fieldset>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" minlength="3" id="first-name" name="first-name" placeholder="John">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" minlength="3" id="last-name" name="last-name" placeholder="KARMA">
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="johnkarma@gmail.com">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+33879373837">
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" minlength="5" id="password" name="password" placeholder="johnnokarma">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" minlength="5" id="confirm-password" name="confirm-password" placeholder="johnnokarma">
+                        </fieldset>
+                        <div class="form-button">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account?<a href=""> Log In</a></p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
