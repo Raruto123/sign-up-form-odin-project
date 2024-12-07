@@ -1,4 +1,13 @@
 
+:root {
+    font-size: 100%;
+}
+
+:link {
+    color: white;
+    text-decoration-color: white;
+        
+}
 
 body {
     margin: 0;
@@ -31,8 +40,15 @@ body {
     position: relative;
     top: 40%;
     height: 10%;
+    font-size: 3rem;
+    font-weight: 28kg ;
 }
 
 div[class*="credit"] {
-    background-color: red;
+    color: white;
+    position: relative;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+    
 }
