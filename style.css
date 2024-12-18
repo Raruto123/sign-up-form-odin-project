@@ -2,6 +2,9 @@
 :root {
     font-size: 100%;
     --white-color : #e4e4e4ac;
+    --right-side-up-height : 40vh;
+    --div-form-height : 30vh;
+    --right-side-height : 100vh;
 }
 
 @font-face {
@@ -12,7 +15,6 @@
 :link {
     color: var(--white-color);
     font-weight: normal;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }
 
@@ -69,10 +71,14 @@ div[class*="credit"] {
     font-size: 0.7rem;
 }
 
+.right-side {
+    height: var(--right-side-height);
+}
+
 .right-side-up {
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 40%;
+    height: var(--right-side-up-height);
     display: flex;
     align-items: end;
     text-align: start;
@@ -86,18 +92,29 @@ div[class*="credit"] {
     margin-right: auto;
 }
 
+.div-form {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 fieldset {
+    height: var(--div-form-height);
     border: none;
+}
+
+legend {
+    font-size: 1.3rem;
+}
+
+fieldset > div {
+    margin-top: 15px;
 }
 
 legend + div {
     display: flex;
-    /* outline: 1Px red solid; */
-    height: auto;
 }
 
 .div-form-left-side, .div-form-right-side {
-    /* outline: auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,7 +125,7 @@ legend + div {
 }
 
 div[class*="form-left"] > label, div[class*="form-right"] > label {
-    /* outline: red 1px solid; */
+    font-size: 0.7rem;
 }
 div[class*="form-left"] > input, div[class*="form-right"] > input {
     margin-bottom: 30px;
@@ -124,4 +141,40 @@ div[class*="form-left"] > input:focus, div[class*="form-right"] > input:focus {
 
 div[class*="form-left"] > input:invalid, div[class*="form-right"] > input:invalid{
     border: 1px solid red;
-} 
+}
+
+fieldset + div {
+    background-color: var(--white-color);
+    box-shadow: inset 0px 5px 1px rgba(42, 38, 38, 0.055);
+    height: 28vh;
+}
+
+.form-button button, .form-button button + p {
+    margin-left: 15px;
+}
+
+.form-button button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(84, 185, 219);
+    border: 1px solid rgb(84, 185, 219);
+    box-shadow: 7px 5px 10px rgba(84, 83, 83, 0.4);
+    cursor: pointer;
+}
+
+/* a[class*="account"] all a which contains account in the class attribute
+a[class^="form-button-account"] all a which starts with form-button-account attribute
+a[class$="link"] all a which ends with link in the class attribute */
+
+a[class$="link"] {
+    font-weight: bold;
+    color: rgb(84, 185, 219);
+    text-decoration: none;
+    
+}
